@@ -1,0 +1,21 @@
+﻿<Window x:Class="QuickLookBridgeApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuickLookBridgeApp"
+        mc:Ignorable="d"
+        Title="QuickLookBridge" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Button Margin="16,0" Grid.Row="1" Height="32" Click="SelectFile_Click">Open File</Button>
+        <TextBox Margin="16,0" Grid.Row="2" Height="32" x:Name="UriText" />
+        <Button Margin="16,0" Grid.Row="3" Height="32" Click="OpenApp_Click">Open QuickLook</Button>
+    </Grid>
+</Window>
