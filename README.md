@@ -1,5 +1,7 @@
 # QuickLook Bridge
 
+use [windows.protocol] to open QuickLook
+
 ```
 quick-look://toggle/?file=
 ```
